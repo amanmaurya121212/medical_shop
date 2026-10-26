@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nidhi Medical Store | Maghar, Sant Kabir Nagar - Trusted Chemist & Healthcare</title>
+  <meta name="description"
+    content="Nidhi Medical Store in Maghar, Sant Kabir Nagar. Genuine medicines, quick prescription WhatsApp orders, BP & Sugar checkups, and emergency healthcare support.">
+  <meta name="keywords"
+    content="Nidhi Medical Store, medical shop Maghar, chemist Sant Kabir Nagar, pharmacy Maghar, order medicine whatsapp, prescription order">
+  <meta name="theme-color" content="#f4f7fb">
+
+  <!-- Open Graph / Meta for Social & WhatsApp Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nidhi Medical Store - Maghar, Sant Kabir Nagar">
+  <meta property="og:description"
+    content="Genuine medicines, WhatsApp prescription ordering, and health check-ups. Open 8:30 AM - 8:30 PM.">
+  <meta property="og:image" content="assets/logo.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+  <!-- Google Fonts: Outfit (Clean, balanced modern geometric) & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Ambient Glow Orbs -->
+  <div class="ambient-glow orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow orb-3" aria-hidden="true"></div>
+
+  <!-- Announcement Notice Bar -->
+  <div class="notice-bar" id="noticeBar">
+    <div class="notice-content">
+      <span class="notice-badge"><i class="fa-solid fa-bell"></i> Store Update</span>
+      <span id="noticeText">Welcome to Nidhi Medical Store! Send your prescription via WhatsApp for express pickup &
+        home delivery in Maghar.</span>
+    </div>
+    <button class="notice-close" id="noticeClose" aria-label="Close Notice"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-identity">
+        <div class="brand-logo-wrapper">
+          <img src="assets/logo.jpg" alt="Nidhi Medical Store Emblem" class="brand-logo">
+          <span class="pulse-indicator"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" id="displayShopName">Nidhi Medical Store</span>
+          <div class="brand-subrow">
+            <span class="brand-tagline" id="displayShopLocation">Maghar, Sant Kabir Nagar</span>
+            <span class="brand-separator">•</span>
+            <span class="status-inline-pill" id="statusInlineBadge">
+              <span class="status-dot"></span>
+              <span id="statusInlineLabel">Open Now (8:30 AM – 8:30 PM)</span>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#prescription" class="nav-link" id="navLinkRx">Order Rx</a>
+        <a href="#services" class="nav-link" id="navLinkServices">Services</a>
+        <a href="#medicines" class="nav-link" id="navLinkProducts">Products</a>
+        <a href="#location" class="nav-link" id="navLinkMap">Directions</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+
+        <!-- Admin Settings Toggle -->
+        <button class="icon-btn admin-btn" id="openAdminBtn" aria-label="Store Settings" title="Store Owner Settings">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+
+        <!-- Fast WhatsApp Order Call-to-Action -->
+        <a href="#prescription" class="btn-whatsapp-nav nav-cta" id="navCtaBtn" title="WhatsApp Order">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="cta-text">WhatsApp Order</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>100% Genuine Medicines • Licenced Chemist</span>
+          </div>
+          <h1 class="hero-title">
+            Your Family's Health, <br>
+            <span class="gradient-text">Our Supreme Priority.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to <strong id="heroShopName">Nidhi Medical Store</strong>. Delivering authentic pharmaceuticals,
+            healthcare essentials, baby care, and clinical vital checks to the people of <span id="heroAddress">Maghar,
+              Sant Kabir Nagar</span> with unmatched care and trust.
+          </p>
+
+          <!-- Key Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <div>
+                <span class="highlight-title">Operating Hours</span>
+                <span class="highlight-value" id="heroTimings">8:30 AM – 8:30 PM Everyday</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <span class="highlight-title">Fast Maghar Delivery</span>
+                <span class="highlight-value">Order on WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-glow" id="heroPrescriptionBtn">
+              <i class="fa-solid fa-camera"></i>
+              <span>Send Prescription on WhatsApp</span>
+            </button>
+            <a href="tel:+919453133632" class="btn btn-secondary" id="heroCallBtn">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>Emergency Call</span>
+            </a>
+            <a href="#location" class="btn btn-glass">
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <span>Get Directions</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="trust-grid">
+            <div class="trust-badge"><i class="fa-solid fa-circle-check"></i> Genuine Stock Only</div>
+            <div class="trust-badge"><i class="fa-solid fa-circle-check"></i> BP & Sugar Checkup</div>
+            <div class="trust-badge"><i class="fa-solid fa-circle-check"></i> Expired Meds Replaced</div>
+            <div class="trust-badge"><i class="fa-solid fa-circle-check"></i> Local Community Chemist</div>
+          </div>
+        </div>
+
+        <!-- Hero 3D Interactive Visual Card -->
+        <div class="hero-visual">
+          <div class="visual-card-glass" id="interactiveCard">
+            <div class="card-glow-reflection"></div>
+            <div class="visual-image-wrapper">
+              <img src="assets/hero_bg.jpg" alt="Nidhi Medical Store Interior" class="hero-main-img">
+              <div class="image-overlay-vignette"></div>
+              <div class="emblem-floating-chip">
+                <img src="assets/logo.jpg" alt="Store Badge" class="floating-emblem-img">
+                <div>
+                  <div class="chip-title">Nidhi Medico</div>
+                  <div class="chip-status">Maghar Branch</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live ECG Heartbeat Pulse Bar -->
+            <div class="ecg-container">
+              <div class="ecg-header">
+                <span><i class="fa-solid fa-heart-pulse"></i> Live Healthcare Support</span>
+                <span class="ecg-rate">72 BPM • Normal</span>
+              </div>
+              <svg class="ecg-svg" viewBox="0 0 500 60" preserveAspectRatio="none">
+                <path class="ecg-track"
+                  d="M 0,30 L 70,30 L 80,10 L 90,50 L 100,20 L 110,40 L 120,30 L 250,30 L 260,10 L 270,50 L 280,20 L 290,40 L 300,30 L 500,30" />
+                <path class="ecg-wave"
+                  d="M 0,30 L 70,30 L 80,10 L 90,50 L 100,20 L 110,40 L 120,30 L 250,30 L 260,10 L 270,50 L 280,20 L 290,40 L 300,30 L 500,30" />
+              </svg>
+            </div>
+
+            <!-- Stats Ribbon -->
+            <div class="stats-ribbon">
+              <div class="stat-box">
+                <span class="stat-number">100%</span>
+                <span class="stat-text">Certified Drugs</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-box">
+                <span class="stat-number">12 Hrs</span>
+                <span class="stat-text">Daily Support</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-box">
+                <span class="stat-number">1000+</span>
+                <span class="stat-text">Families Served</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prescription Upload & WhatsApp Order Feature -->
+    <section class="section-container prescription-section" id="prescription">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-bolt"></i> Express Service</span>
+        <h2 class="section-title">Order With Prescription in 3 Simple Steps</h2>
+        <p class="section-subtitle">No need to stand in queue! Take a picture of your doctor's slip or enter medicine
+          names, and we will prepare it for instant pickup or delivery in Maghar.</p>
+      </div>
+
+      <div class="prescription-grid">
+        <!-- Interactive Prescription Form -->
+        <div class="prescription-card glass-panel">
+          <div class="card-badge">Instant WhatsApp Connect</div>
+          <form id="rxForm" class="rx-form">
+            <div class="form-group">
+              <label for="patientName"><i class="fa-solid fa-user"></i> Patient Name / Your Name</label>
+              <input type="text" id="patientName" placeholder="e.g. Ramesh Kumar" required>
+            </div>
+
+            <div class="form-group">
+              <label for="patientPhone"><i class="fa-solid fa-phone"></i> Contact Number</label>
+              <input type="tel" id="patientPhone" placeholder="e.g. 9876543210" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+              <label for="medicineDetails"><i class="fa-solid fa-notes-medical"></i> Medicine Names / Instructions
+                (Optional if attaching slip)</label>
+              <textarea id="medicineDetails" rows="3"
+                placeholder="e.g. Paracetamol 650mg (1 strip), Cough Syrup, Vitamin D capsules..."></textarea>
+            </div>
+
+            <!-- Drag & Drop Prescription Slip Image Picker -->
+            <div class="form-group">
+              <label><i class="fa-solid fa-camera"></i> Prescription Photo / Doctor Slip</label>
+              <div class="dropzone" id="dropzone">
+                <input type="file" id="prescriptionFile" accept="image/*" class="file-input">
+                <div class="dropzone-content" id="dropzonePrompt">
+                  <div class="dropzone-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                  <p class="dropzone-text"><strong>Click to snap or upload doctor's prescription</strong></p>
+                  <span class="dropzone-hint">Supports JPG, PNG, Mobile Camera photos</span>
+                </div>
+                <div class="preview-wrapper hidden" id="previewWrapper">
+                  <img src="" alt="Prescription preview" id="previewImage" class="preview-img">
+                  <div class="preview-actions">
+                    <span class="preview-filename" id="previewFilename"></span>
+                    <button type="button" class="btn-remove" id="btnRemovePreview" title="Remove image"><i
+                        class="fa-solid fa-trash-can"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Delivery Preference -->
+            <div class="form-group">
+              <label><i class="fa-solid fa-location-dot"></i> Delivery / Pickup Preference</label>
+              <div class="radio-pill-group">
+                <label class="radio-pill">
+                  <input type="radio" name="orderType" value="Store Pickup" checked>
+                  <span><i class="fa-solid fa-store"></i> Store Pickup</span>
+                </label>
+                <label class="radio-pill">
+                  <input type="radio" name="orderType" value="Home Delivery in Maghar">
+                  <span><i class="fa-solid fa-person-biking"></i> Maghar Home Delivery</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp-lg" id="submitRxBtn">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Send Prescription on WhatsApp</span>
+            </button>
+            <p class="form-secure-note"><i class="fa-solid fa-lock"></i> Your health information is kept strictly
+              confidential & delivered directly to our licensed chemist.</p>
+          </form>
+        </div>
+
+        <!-- 3-Step Walkthrough Flow -->
+        <div class="steps-container">
+          <div class="step-card glass-panel">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <div class="step-content">
+              <h3>Snap Prescription</h3>
+              <p>Take a clear photo of your prescription doctor's note or write down the medicine names.</p>
+            </div>
+          </div>
+
+          <div class="step-card glass-panel">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="step-content">
+              <h3>WhatsApp Verification</h3>
+              <p>We receive your request instantly, check expiry dates, match dosage, and quote you the best price.</p>
+            </div>
+          </div>
+
+          <div class="step-card glass-panel">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+            <div class="step-content">
+              <h3>Pickup or Delivery</h3>
+              <p>Collect your medicines packed and ready at our Maghar store, or request local home doorstep delivery.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Contact Callout -->
+          <div class="direct-contact-callout glass-panel">
+            <div class="callout-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="callout-body">
+              <h4>Prefer to Talk Directly?</h4>
+              <p>Our chemist is always ready to guide you with dosage and generic alternatives.</p>
+              <a href="tel:+919453133632" class="callout-phone" id="calloutPhoneLink">
+                <i class="fa-solid fa-phone"></i> <span id="calloutPhoneDisplay">+91 94531 33632</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Check-Up Services Section -->
+    <section class="section-container services-section" id="services">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-stethoscope"></i> Clinical Services</span>
+        <h2 class="section-title">In-Store Healthcare & Vital Checks</h2>
+        <p class="section-subtitle">Visit Nidhi Medical Store for convenient, accurate, and hygienic point-of-care vital
+          checks by trained professionals.</p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Loaded dynamically from app.js based on admin settings -->
+      </div>
+    </section>
+
+    <!-- Medicine Finder & Category Showcase -->
+    <section class="section-container medicine-section" id="medicines">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-boxes-stacked"></i> Comprehensive Inventory</span>
+        <h2 class="section-title">Medicine & Healthcare Essentials</h2>
+        <p class="section-subtitle">Search common medicines, baby essentials, and surgical supplies or enquire about
+          generic availability.</p>
+      </div>
+
+      <!-- Live Search & Filter Bar -->
+      <div class="search-filter-box glass-panel">
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="medicineSearchInput"
+            placeholder="Search medicines (e.g., Paracetamol, Diabetes, Baby diapers, Pain relief, ORS...)">
+          <button id="clearSearchBtn" class="clear-search hidden" aria-label="Clear Search"><i
+              class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="category-tabs" id="categoryTabs">
+          <button class="tab-btn active" data-category="all">All Items</button>
+          <button class="tab-btn" data-category="otc">Daily OTC & Pain</button>
+          <button class="tab-btn" data-category="chronic">Chronic Care (BP/Sugar)</button>
+          <button class="tab-btn" data-category="baby">Baby & Mother Care</button>
+          <button class="tab-btn" data-category="ayurvedic">Ayurvedic & Herbal</button>
+          <button class="tab-btn" data-category="surgical">Surgicals & First Aid</button>
+        </div>
+      </div>
+
+      <!-- Medicine Cards Grid -->
+      <div class="medicine-grid" id="medicineGrid">
+        <!-- Loaded dynamically via app.js -->
+      </div>
+
+      <!-- Special Medicine Enquiry Banner -->
+      <div class="custom-enquiry-banner glass-panel">
+        <div class="enquiry-icon"><i class="fa-solid fa-clipboard-question"></i></div>
+        <div class="enquiry-text">
+          <h3>Need a specific medicine not shown here?</h3>
+          <p>We stock over 5,000+ brands and generics. If something is rare, we arrange it within 24 hours.</p>
+        </div>
+        <a href="https://wa.me/919453133632?text=Hello%20Nidhi%20Medical%20Store,%20is%20this%20medicine%20available:%20"
+          class="btn btn-primary" id="askAvailBtn" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> Ask Availability
+        </a>
+      </div>
+    </section>
+
+    <!-- Google Maps & Store Location Section -->
+    <section class="section-container location-section" id="location">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-location-dot"></i> Visit Our Pharmacy</span>
+        <h2 class="section-title">Find Us in Maghar, Sant Kabir Nagar</h2>
+        <p class="section-subtitle">Easily navigate to our physical store for instant prescriptions, vital checks, and
+          personal chemist consultation.</p>
+      </div>
+
+      <div class="location-wrapper">
+        <!-- Interactive Store Information Card -->
+        <div class="store-info-card glass-panel">
+          <div class="store-info-header">
+            <div class="store-icon-badge"><i class="fa-solid fa-shop"></i></div>
+            <div>
+              <h3 id="mapShopName">Nidhi Medical Store</h3>
+              <span class="store-address-badge"><i class="fa-solid fa-location-crosshairs"></i> Maghar Center</span>
+            </div>
+          </div>
+
+          <div class="info-list">
+            <div class="info-row">
+              <i class="fa-solid fa-map-pin"></i>
+              <div>
+                <strong>Physical Address:</strong>
+                <p id="mapAddressDisplay">Maghar, Sant Kabir Nagar, Uttar Pradesh</p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Store Timings:</strong>
+                <p id="mapTimingsDisplay">8:30 AM to 8:30 PM (Open 7 Days a Week)</p>
+                <span class="timing-badge" id="mapLiveStatus">🟢 Open Now</span>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Contact / WhatsApp:</strong>
+                <p><a href="tel:+919453133632" class="link-hover" id="mapPhoneDisplay">+91 94531 33632</a></p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <i class="fa-solid fa-square-parking"></i>
+              <div>
+                <strong>Accessibility:</strong>
+                <p>Easy two-wheeler & four-wheeler roadside parking, ground floor accessible.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Get Directions Button -->
+          <div class="map-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Nidhi+Medical+Store+Maghar+Sant+Kabir+Nagar"
+              target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-directions" id="googleMapsLink">
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <span>Get Directions on Google Maps</span>
+            </a>
+            <a href="tel:+919453133632" class="btn btn-secondary" id="mapQuickCall">
+              <i class="fa-solid fa-phone"></i> Call Store
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map Interactive Embed Container -->
+        <div class="map-embed-container glass-panel">
+          <iframe id="googleMapFrame" title="Nidhi Medical Store Maghar Map Location"
+            src="https://maps.google.com/maps?q=Maghar,%20Sant%20Kabir%20Nagar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-overlay-badge">
+            <i class="fa-solid fa-map-pin"></i> <span>Nidhi Medical Store • Maghar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Trust Pillars -->
+    <section class="section-container why-us-section">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-star"></i> Why Maghar Trusts Us</span>
+        <h2 class="section-title">The Care & Honesty Your Family Deserves</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card glass-panel">
+          <div class="pillar-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+          <h3>Proper Cold-Chain Storage</h3>
+          <p>Insulins, vaccines, and eye drops stored in monitored refrigerators to preserve 100% therapeutic efficacy.
+          </p>
+        </div>
+
+        <div class="pillar-card glass-panel">
+          <div class="pillar-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <h3>Fair & Honest Pricing</h3>
+          <p>Transparent billing, affordable generic alternatives available, and zero overcharging on essential
+            medications.</p>
+        </div>
+
+        <div class="pillar-card glass-panel">
+          <div class="pillar-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>Expert Dosage Guidance</h3>
+          <p>Clear instructions on when and how to take medicines (before/after meals) to avoid contraindications.</p>
+        </div>
+
+        <div class="pillar-card glass-panel">
+          <div class="pillar-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Community First Chemist</h3>
+          <p>Serving our neighbors in Maghar and surrounding villages with genuine empathy, patience, and warmth.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Quick Help Section -->
+    <section class="section-container contact-section" id="contact">
+      <div class="contact-card glass-panel">
+        <div class="contact-left">
+          <span class="section-tag"><i class="fa-solid fa-comment-medical"></i> Need Quick Assistance?</span>
+          <h2>We Are Just One Call Or WhatsApp Away</h2>
+          <p>Have a question about medicine availability, dosage, baby care, or elder care? Contact us directly anytime
+            between 8:30 AM and 8:30 PM.</p>
+
+          <div class="contact-quick-buttons">
+            <a href="https://wa.me/919453133632?text=Hello%20Nidhi%20Medical%20Store,%20I%20have%20an%20enquiry"
+              target="_blank" class="btn btn-whatsapp-lg" id="contactWaBtn">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="tel:+919453133632" class="btn btn-secondary-lg" id="contactCallBtn">
+              <i class="fa-solid fa-phone"></i> Call Store
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="hours-card">
+            <h4><i class="fa-solid fa-calendar-check"></i> Store Schedule</h4>
+            <div class="hour-line"><span>Monday – Sunday</span> <strong id="scheduleTimings">8:30 AM – 8:30 PM</strong>
+            </div>
+            <div class="hour-line"><span>Emergency Support</span> <strong>Available on Call</strong></div>
+            <div class="hour-line"><span>WhatsApp Orders</span> <strong>Processed Instantly</strong></div>
+            <div class="emergency-notice">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>For severe medical emergencies, please visit the nearest district hospital immediately.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-header">
+            <img src="assets/logo.jpg" alt="Logo" class="footer-logo">
+            <h3 id="footerShopName">Nidhi Medical Store</h3>
+          </div>
+          <p>Your trusted neighborhood chemist in Maghar, Sant Kabir Nagar. Providing authentic medications, surgical
+            essentials, and healthcare diagnostics.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#prescription">Order via Prescription</a></li>
+            <li><a href="#services">Health Check Services</a></li>
+            <li><a href="#medicines">Medicine Catalog</a></li>
+            <li><a href="#location">Google Maps Directions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="tel:+919453133632" id="footerPhoneLink"><i class="fa-solid fa-phone"></i> +91 94531 33632</a>
+            </li>
+            <li><a href="https://wa.me/919453133632" target="_blank" id="footerWaLink"><i
+                  class="fa-brands fa-whatsapp"></i> WhatsApp Order Line</a></li>
+            <li><span id="footerAddressText"><i class="fa-solid fa-location-dot"></i> Maghar, Sant Kabir Nagar</span>
+            </li>
+            <li><span id="footerHoursText"><i class="fa-solid fa-clock"></i> 8:30 AM – 8:30 PM</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> <strong id="footerCopyName">Nidhi Medical Store</strong>. All rights
+          reserved.</p>
+        <p class="owner-edit-hint">
+          <button class="footer-admin-link" id="footerAdminBtn"><i class="fa-solid fa-gear"></i> Store Owner
+            Dashboard</button>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Speed Dial Widgets -->
+  <aside class="floating-widgets" aria-label="Quick Actions">
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/919453133632?text=Hello%20Nidhi%20Medical%20Store,%20I%20want%20to%20order%20medicines"
+      class="float-btn float-wa" id="floatWaBtn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us"
+      title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Chat / Order on WhatsApp</span>
+    </a>
+
+    <!-- Emergency Call Floating Action -->
+    <a href="tel:+919453133632" class="float-btn float-call" id="floatCallBtn" aria-label="Emergency Call"
+      title="Call Store">
+      <i class="fa-solid fa-phone-volume"></i>
+      <span class="float-tooltip">Call Store</span>
+    </a>
+
+    <!-- Scroll to Top -->
+    <button class="float-btn float-top hidden" id="floatTopBtn" aria-label="Scroll to top" title="Scroll to Top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </aside>
+
+  <!-- STORE OWNER ADMIN DASHBOARD MODAL -->
+  <div class="modal-overlay hidden" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-sliders-h"></i>
+          <h3 id="adminTitle">Store Owner Dashboard</h3>
+        </div>
+        <button class="modal-close" id="closeAdminBtn" aria-label="Close Dashboard"><i
+            class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <!-- PIN Protection View -->
+      <div id="adminPinView" class="admin-view">
+        <div class="admin-lock-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <p class="admin-instruction">Enter your Store Owner PIN to edit details, services, catalog, and timings.</p>
+        <div class="pin-input-group">
+          <input type="password" id="adminPinInput" placeholder="Enter PIN" autocomplete="off">
+          <button class="btn btn-primary" id="adminPinSubmit">Unlock</button>
+        </div>
+      </div>
+
+      <!-- Settings Form View (Hidden until authenticated) -->
+      <div id="adminSettingsView" class="admin-view hidden">
+        <!-- Dashboard Navigation Tabs -->
+        <div class="admin-tabs">
+          <button class="admin-tab-btn active" data-target="adminTabGeneral">
+            <i class="fa-solid fa-store"></i> General Info
+          </button>
+          <button class="admin-tab-btn" data-target="adminTabSections">
+            <i class="fa-solid fa-toggle-on"></i> Section Visibility
+          </button>
+          <button class="admin-tab-btn" data-target="adminTabServices">
+            <i class="fa-solid fa-heart-pulse"></i> Manage Services
+          </button>
+          <button class="admin-tab-btn" data-target="adminTabMedicines">
+            <i class="fa-solid fa-pills"></i> Manage Medicines
+          </button>
+        </div>
+
+        <!-- TAB 1: General Info -->
+        <form id="adminGeneralForm" class="admin-tab-content active" id="adminTabGeneral">
+          <div class="admin-form-grid">
+            <div class="form-group">
+              <label for="adminShopName"><i class="fa-solid fa-store"></i> Shop Name</label>
+              <input type="text" id="adminShopName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="adminPhone"><i class="fa-solid fa-phone"></i> WhatsApp & Call Number</label>
+              <input type="text" id="adminPhone" placeholder="9453133632" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="adminAddress"><i class="fa-solid fa-location-dot"></i> Address / Landmark</label>
+              <input type="text" id="adminAddress" placeholder="Maghar, Sant Kabir Nagar" required>
+            </div>
+
+            <div class="form-group">
+              <label for="adminOpenTime"><i class="fa-solid fa-sun"></i> Store Opening Time</label>
+              <input type="time" id="adminOpenTime" value="08:30" required>
+            </div>
+
+            <div class="form-group">
+              <label for="adminCloseTime"><i class="fa-solid fa-moon"></i> Store Closing Time</label>
+              <input type="time" id="adminCloseTime" value="20:30" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="adminNotice"><i class="fa-solid fa-bullhorn"></i> Top Announcement Notice Bar</label>
+              <textarea id="adminNotice" rows="2"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="adminNewPin"><i class="fa-solid fa-key"></i> Change Admin PIN</label>
+              <input type="password" id="adminNewPin" placeholder="••••••••" autocomplete="new-password">
+            </div>
+
+            <div class="form-group">
+              <label for="adminMapQuery"><i class="fa-solid fa-map"></i> Google Maps Query</label>
+              <input type="text" id="adminMapQuery" placeholder="Nidhi Medical Store Maghar Sant Kabir Nagar">
+            </div>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i> Save General
+              Details</button>
+          </div>
+        </form>
+
+        <!-- TAB 2: Section Visibility Toggles -->
+        <div class="admin-tab-content hidden" id="adminTabSections">
+          <p class="tab-instruction">Turn sections ON or OFF to control what appears on your live website.</p>
+          <div class="toggles-list">
+            <label class="toggle-card">
+              <div class="toggle-info">
+                <strong><i class="fa-solid fa-heart-pulse"></i> In-Store Clinical Vital Checks</strong>
+                <span>Show blood pressure, sugar, nebulizer, and clinic services section</span>
+              </div>
+              <input type="checkbox" id="toggleServicesSection" checked>
+              <span class="toggle-slider"></span>
+            </label>
+
+            <label class="toggle-card">
+              <div class="toggle-info">
+                <strong><i class="fa-solid fa-pills"></i> Medicine & Product Catalog</strong>
+                <span>Show medicine search and category showcase</span>
+              </div>
+              <input type="checkbox" id="toggleMedicinesSection" checked>
+              <span class="toggle-slider"></span>
+            </label>
+
+            <label class="toggle-card">
+              <div class="toggle-info">
+                <strong><i class="fa-solid fa-file-prescription"></i> WhatsApp Prescription Order</strong>
+                <span>Show doctor's prescription upload and ordering card</span>
+              </div>
+              <input type="checkbox" id="togglePrescriptionSection" checked>
+              <span class="toggle-slider"></span>
+            </label>
+
+            <label class="toggle-card">
+              <div class="toggle-info">
+                <strong><i class="fa-solid fa-bullhorn"></i> Top Announcement Notice Bar</strong>
+                <span>Show banner on top of website</span>
+              </div>
+              <input type="checkbox" id="toggleNoticeBar" checked>
+              <span class="toggle-slider"></span>
+            </label>
+
+            <label class="toggle-card">
+              <div class="toggle-info">
+                <strong><i class="fa-solid fa-map-location-dot"></i> Google Maps Location Section</strong>
+                <span>Show embedded map and turn-by-turn directions</span>
+              </div>
+              <input type="checkbox" id="toggleLocationSection" checked>
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div class="admin-actions" style="margin-top: 20px;">
+            <button type="button" class="btn btn-primary" id="btnSaveSectionToggles">
+              <i class="fa-solid fa-floppy-disk"></i> Save Visibility Settings
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 3: Manage Clinical Services (Add / Remove) -->
+        <div class="admin-tab-content hidden" id="adminTabServices">
+          <div class="add-item-card glass-panel">
+            <h4><i class="fa-solid fa-plus-circle"></i> Add New Health Service</h4>
+            <form id="addServiceForm" class="add-form">
+              <div class="add-form-row">
+                <input type="text" id="newServiceTitle" placeholder="Service Title (e.g. ECG Test)" required>
+                <input type="text" id="newServiceTag" placeholder="Tag (e.g. Instant, Free, Rs 50)" required>
+              </div>
+              <textarea id="newServiceDesc" rows="2" placeholder="Brief description of this test or service..."
+                required></textarea>
+              <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i> Add Service</button>
+            </form>
+          </div>
+
+          <h4 style="margin: 20px 0 10px;"><i class="fa-solid fa-list-check"></i> Current Active Services</h4>
+          <div class="admin-items-list" id="adminServicesList">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- TAB 4: Manage Medicine Catalog (Add / Remove) -->
+        <div class="admin-tab-content hidden" id="adminTabMedicines">
+          <div class="add-item-card glass-panel">
+            <h4><i class="fa-solid fa-plus-circle"></i> Add Medicine / Product to Catalog</h4>
+            <form id="addMedicineForm" class="add-form">
+              <div class="add-form-row">
+                <input type="text" id="newMedName" placeholder="Medicine Name (e.g. Azithromycin 500mg)" required>
+                <select id="newMedCategory" required>
+                  <option value="otc">Daily OTC & Pain</option>
+                  <option value="chronic">Chronic Care (BP/Sugar)</option>
+                  <option value="baby">Baby & Mother Care</option>
+                  <option value="ayurvedic">Ayurvedic & Herbal</option>
+                  <option value="surgical">Surgicals & First Aid</option>
+                </select>
+              </div>
+              <div class="add-form-row">
+                <input type="text" id="newMedBadge" placeholder="Badge (e.g. In Stock, Fast Relief, Top Seller)"
+                  required>
+              </div>
+              <textarea id="newMedDesc" rows="2" placeholder="Medicine usage details / dosage note..."
+                required></textarea>
+              <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-plus"></i> Add
+                Medicine</button>
+            </form>
+          </div>
+
+          <h4 style="margin: 20px 0 10px;"><i class="fa-solid fa-boxes-stacked"></i> Current Catalog Medicines</h4>
+          <div class="admin-items-list" id="adminMedicinesList">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Bottom Reset / Action Bar -->
+        <div class="admin-footer-bar">
+          <button type="button" class="btn btn-glass" id="adminResetBtn">
+            <i class="fa-solid fa-rotate-left"></i> Reset All Store Defaults
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+
+</html>
